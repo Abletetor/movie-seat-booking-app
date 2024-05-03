@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Movie-Seat-Booking-App</title>
+
+     <!-- local css file  -->
+     <link rel="stylesheet" href="styles.css">
+
+     <!-- google font  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!-- title section start  -->
+     <div class="title">
+          <h2>Movie-Seat-Booking</h2>
+          <p></p>
+     </div>
+     <!-- title section ends -->
+
+     <!-- movie section start-->
+     <div class="movie-container">
+          <label for="">Select a movie</label>
+          <select id="movie">
+               <option value="10">The Last Avatar 2024 (¢10)</option>
+               <option value="15">The Equalizer 4 (¢15)</option>
+               <option value="12">3 Body Problem (¢12)</option>
+               <option value="20">The Hitman Wife (¢20)</option>
+               <option value="17">Cash Out (¢17)</option>
+          </select>
+     </div>
+     <!-- movie section ends -->
+
+     <!-- showcase section start -->
+     <ul class="showcase">
+          <li>
+               <div class="seat"></div>
+               <small>N/A</small>
+          </li>
+
+          <li>
+               <div class="seat selected"></div>
+               <small>Selected</small>
+          </li>
+
+          <li>
+               <div class="seat occupied"></div>
+               <small>Occupied</small>
+          </li>
+     </ul>
+     <!-- showcase section ends -->
+
+     <!-- screen and seats section start-->
+     <div class="container">
+          <div class="screen"></div>
+          <div class="row">
+               <div class="seat occupied"></div>
+               <div class="seat occupied"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+          </div>
+
+          <div class="row">
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+          </div>
+
+          <div class="row">
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat occupied"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat occupied"></div>
+               <div class="seat"></div>
+          </div>
+
+          <div class="row">
+               <div class="seat occupied"></div>
+               <div class="seat occupied"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+          </div>
+
+          <div class="row">
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat occupied"></div>
+               <div class="seat occupied"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+               <div class="seat"></div>
+          </div>
+
+     </div>
+     <!-- screen and seat section ends -->
+
+<p class="text">
+     You have selected <span id="count">0</span> seats for a price of <span>¢</span><span id="total">0</span>
+</p>
+
+<!-- checkout button  -->
+<div class="checkout">
+     <button>Pay Now</button>
+</div>
+     <script src="script.js"></script>
+</body>
+
+</html>
